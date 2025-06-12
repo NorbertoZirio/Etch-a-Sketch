@@ -1,0 +1,15 @@
+#greedContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 736px;
+    height: 736px;
+    justify-content: center;
+
+}
+
+.greenSquare{
+    width: 25px;
+    height: 25px;
+    background-color: aqua;
+    margin: 10px;
+}
