@@ -26,11 +26,19 @@ function createGreed(){
     //seleccionando los cuadrados
     const content=document.querySelectorAll(".greenSquare")
 
-
+    let colorRed=Math.random()*255
+    let colorGreen=Math.random()*255
+    let colorBlue=Math.random()*255
+    let opacity= 0.1
     //comportamiento de los cuadrados(Cambiar a rojo)
     content.forEach((greenSquare) => {
+        
+        greenSquare.style.background= `rgb(${colorRed}, ${colorGreen}, ${colorBlue})`
+        greenSquare.style.opacity=1
         greenSquare.addEventListener("mouseenter", function (e){
             e.target.style.background="red"
+            e.target.style.opacity=opacity
+            opacity+=0.1
         })
     })
 }
